@@ -1,0 +1,18 @@
+pipeline {
+  agent any
+
+  stages {
+    stage("Demo") {
+      steps {
+        myFunc("Hello Jenkins")
+        sh """
+        
+        """
+      }
+    }
+  }
+}
+
+def myFunc(String myText) {
+  echo "my tech ${myText}"
+} 
